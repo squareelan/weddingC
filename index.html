@@ -318,7 +318,7 @@ p {line-height: 2}
 </script>  
 <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("April 2, 2017 18:00:00").getTime();
+  var countDownDate = new Date("April 2, 2017 00:00:00").getTime();
 
   var now = new Date().getTime();
 
@@ -326,7 +326,7 @@ p {line-height: 2}
   var distance = countDownDate - now;
 
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var days = Math.ceil(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
